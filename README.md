@@ -1,6 +1,6 @@
-# Instructions — Running the Pitch Scoring Pipeline
+# Live Preview - Quick Try
 
-Try it on -> 
+Try it on -> https://huggingface.co/spaces/SupermanRX/PhraseScoreJudge
 
 You can see the files being processed :
 ![alt text](image.png)
@@ -8,6 +8,8 @@ You can see the files being processed :
 
 The results would be displayed in a table like this : 
 ![alt text](image-1.png)
+
+# Instructions — Running the Pitch Scoring Pipeline Locally
 
 ## Dependencies
 
