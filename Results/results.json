@@ -6,43 +6,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 83.87,
-        "dtw_score": 84.41,
-        "key_offset_cents": 70.99,
-        "key_penalty": 82.25,
-        "snr_penalty": 1.0,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 88.63,
-        "dtw_score": 85.41,
-        "key_offset_cents": 6.92,
-        "key_penalty": 98.27,
-        "snr_penalty": 1.0,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 68.89,
-        "dtw_score": 72.26,
-        "key_offset_cents": 164.89,
-        "key_penalty": 58.78,
-        "snr_penalty": 1.0,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 87.11,
-        "dtw_score": 85.78,
-        "key_offset_cents": 35.58,
-        "key_penalty": 91.1,
+        "phrase_score": 64.92,
+        "dtw_score": 60.04,
+        "key_offset_cents": 81.73,
+        "key_penalty": 79.57,
         "snr_penalty": 1.0,
         "label": null,
         "reason": null
@@ -56,43 +23,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 68.45,
-        "dtw_score": 85.29,
-        "key_offset_cents": 77.02,
-        "key_penalty": 80.75,
-        "snr_penalty": 0.8133000135421753,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 68.7,
-        "dtw_score": 84.23,
-        "key_offset_cents": 59.31,
-        "key_penalty": 85.17,
-        "snr_penalty": 0.8133000135421753,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 63.92,
-        "dtw_score": 78.42,
-        "key_offset_cents": 83.5,
-        "key_penalty": 79.13,
-        "snr_penalty": 0.8133000135421753,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 71.38,
-        "dtw_score": 85.79,
-        "key_offset_cents": 25.3,
-        "key_penalty": 93.68,
+        "phrase_score": 69.36,
+        "dtw_score": 85.53,
+        "key_offset_cents": 61.89,
+        "key_penalty": 84.53,
         "snr_penalty": 0.8133000135421753,
         "label": null,
         "reason": null
@@ -106,43 +40,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 32.41,
-        "dtw_score": 87.7,
-        "key_offset_cents": 137.99,
-        "key_penalty": 65.5,
-        "snr_penalty": 0.3946000039577484,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 33.01,
-        "dtw_score": 84.29,
-        "key_offset_cents": 72.88,
-        "key_penalty": 81.78,
-        "snr_penalty": 0.3946000039577484,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 25.23,
-        "dtw_score": 73.89,
-        "key_offset_cents": 263.46,
-        "key_penalty": 34.14,
-        "snr_penalty": 0.3946000039577484,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 32.34,
-        "dtw_score": 86.08,
-        "key_offset_cents": 121.37,
-        "key_penalty": 69.66,
+        "phrase_score": 30.78,
+        "dtw_score": 84.78,
+        "key_offset_cents": 169.34,
+        "key_penalty": 57.67,
         "snr_penalty": 0.3946000039577484,
         "label": null,
         "reason": null
@@ -156,43 +57,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 26.01,
-        "dtw_score": 86.14,
-        "key_offset_cents": 13.33,
-        "key_penalty": 96.67,
-        "snr_penalty": 0.2930000126361847,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 24.05,
-        "dtw_score": 83.71,
-        "key_offset_cents": 91.19,
-        "key_penalty": 77.2,
-        "snr_penalty": 0.2930000126361847,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 23.23,
-        "dtw_score": 78.85,
-        "key_offset_cents": 77.68,
-        "key_penalty": 80.58,
-        "snr_penalty": 0.2930000126361847,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 26.23,
-        "dtw_score": 87.18,
-        "key_offset_cents": 13.7,
-        "key_penalty": 96.58,
+        "phrase_score": 25.5,
+        "dtw_score": 84.42,
+        "key_offset_cents": 20.51,
+        "key_penalty": 94.87,
         "snr_penalty": 0.2930000126361847,
         "label": null,
         "reason": null
@@ -206,43 +74,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 42.78,
-        "dtw_score": 87.65,
-        "key_offset_cents": 3.66,
-        "key_penalty": 99.09,
-        "snr_penalty": 0.47269999980926514,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 38.14,
-        "dtw_score": 83.26,
-        "key_offset_cents": 108.1,
-        "key_penalty": 72.98,
-        "snr_penalty": 0.47269999980926514,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 36.39,
-        "dtw_score": 77.54,
-        "key_offset_cents": 98.45,
-        "key_penalty": 75.39,
-        "snr_penalty": 0.47269999980926514,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 42.98,
-        "dtw_score": 88.0,
-        "key_offset_cents": 1.11,
-        "key_penalty": 99.72,
+        "phrase_score": 41.3,
+        "dtw_score": 85.12,
+        "key_offset_cents": 23.45,
+        "key_penalty": 94.14,
         "snr_penalty": 0.47269999980926514,
         "label": null,
         "reason": null
@@ -256,43 +91,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 24.27,
-        "dtw_score": 87.17,
-        "key_offset_cents": 50.89,
-        "key_penalty": 87.28,
-        "snr_penalty": 0.2782999873161316,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 23.76,
-        "dtw_score": 85.46,
-        "key_offset_cents": 59.39,
-        "key_penalty": 85.15,
-        "snr_penalty": 0.2782999873161316,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 20.22,
-        "dtw_score": 77.26,
-        "key_offset_cents": 164.64,
-        "key_penalty": 58.84,
-        "snr_penalty": 0.2782999873161316,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 24.59,
-        "dtw_score": 85.39,
-        "key_offset_cents": 10.86,
-        "key_penalty": 97.28,
+        "phrase_score": 24.09,
+        "dtw_score": 84.47,
+        "key_offset_cents": 28.48,
+        "key_penalty": 92.88,
         "snr_penalty": 0.2782999873161316,
         "label": null,
         "reason": null
@@ -300,36 +102,19 @@
     ]
   },
   {
-    "track_id": "candidate_7",
-    "snr": null,
+    "track_id": "4c424844-174a-4e63-9956-469d18fb8ee3__f00374d8-8016-4c58-845d-debe862f77fd.wav",
+    "snr": 0.002899999963119626,
     "phrases": [
       {
         "phrase_number": 1,
-        "status": "skipped",
-        "phrase_score": null,
-        "label": "silent_track",
-        "reason": "no voice activity detected in track"
-      },
-      {
-        "phrase_number": 2,
-        "status": "skipped",
-        "phrase_score": null,
-        "label": "silent_track",
-        "reason": "no voice activity detected in track"
-      },
-      {
-        "phrase_number": 3,
-        "status": "skipped",
-        "phrase_score": null,
-        "label": "silent_track",
-        "reason": "no voice activity detected in track"
-      },
-      {
-        "phrase_number": 4,
-        "status": "skipped",
-        "phrase_score": null,
-        "label": "silent_track",
-        "reason": "no voice activity detected in track"
+        "status": "scored",
+        "phrase_score": 0.04,
+        "dtw_score": 23.59,
+        "key_offset_cents": 269.05,
+        "key_penalty": 32.74,
+        "snr_penalty": 0.0017000000225380063,
+        "label": null,
+        "reason": null
       }
     ]
   },
@@ -340,43 +125,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 60.56,
-        "dtw_score": 78.21,
-        "key_offset_cents": 93.31,
-        "key_penalty": 76.67,
-        "snr_penalty": 0.7781000137329102,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 55.23,
-        "dtw_score": 65.82,
-        "key_offset_cents": 54.06,
-        "key_penalty": 86.49,
-        "snr_penalty": 0.7781000137329102,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 52.53,
-        "dtw_score": 66.32,
-        "key_offset_cents": 115.63,
-        "key_penalty": 71.09,
-        "snr_penalty": 0.7781000137329102,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 69.57,
-        "dtw_score": 88.01,
-        "key_offset_cents": 25.49,
-        "key_penalty": 93.63,
+        "phrase_score": 46.77,
+        "dtw_score": 55.67,
+        "key_offset_cents": 106.3,
+        "key_penalty": 73.42,
         "snr_penalty": 0.7781000137329102,
         "label": null,
         "reason": null
@@ -390,43 +142,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 68.56,
-        "dtw_score": 86.49,
-        "key_offset_cents": 197.45,
-        "key_penalty": 50.64,
-        "snr_penalty": 0.8842999935150146,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 72.72,
-        "dtw_score": 85.4,
-        "key_offset_cents": 109.2,
-        "key_penalty": 72.7,
-        "snr_penalty": 0.8842999935150146,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 58.75,
-        "dtw_score": 75.31,
-        "key_offset_cents": 240.79,
-        "key_penalty": 39.8,
-        "snr_penalty": 0.8842999935150146,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 72.18,
-        "dtw_score": 88.74,
-        "key_offset_cents": 158.98,
-        "key_penalty": 60.26,
+        "phrase_score": 68.8,
+        "dtw_score": 85.78,
+        "key_offset_cents": 184.63,
+        "key_penalty": 53.84,
         "snr_penalty": 0.8842999935150146,
         "label": null,
         "reason": null
@@ -440,43 +159,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 5.56,
-        "dtw_score": 85.17,
-        "key_offset_cents": 279.32,
-        "key_penalty": 30.17,
-        "snr_penalty": 0.0778999999165535,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 3.79,
-        "dtw_score": 64.83,
-        "key_offset_cents": 654.22,
-        "key_penalty": 0.0,
-        "snr_penalty": 0.0778999999165535,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 3.59,
-        "dtw_score": 61.47,
-        "key_offset_cents": 416.71,
-        "key_penalty": 0.0,
-        "snr_penalty": 0.0778999999165535,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 5.84,
-        "dtw_score": 83.62,
-        "key_offset_cents": 203.04,
-        "key_penalty": 49.24,
+        "phrase_score": 4.74,
+        "dtw_score": 72.6,
+        "key_offset_cents": 297.79,
+        "key_penalty": 25.55,
         "snr_penalty": 0.0778999999165535,
         "label": null,
         "reason": null
@@ -490,43 +176,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 33.36,
-        "dtw_score": 86.96,
-        "key_offset_cents": 45.67,
-        "key_penalty": 88.58,
-        "snr_penalty": 0.38190001249313354,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 33.91,
-        "dtw_score": 86.06,
-        "key_offset_cents": 11.95,
-        "key_penalty": 97.01,
-        "snr_penalty": 0.38190001249313354,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 28.59,
-        "dtw_score": 76.84,
-        "key_offset_cents": 124.37,
-        "key_penalty": 68.91,
-        "snr_penalty": 0.38190001249313354,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 33.18,
-        "dtw_score": 84.83,
-        "key_offset_cents": 27.64,
-        "key_penalty": 93.09,
+        "phrase_score": 29.11,
+        "dtw_score": 77.49,
+        "key_offset_cents": 110.23,
+        "key_penalty": 72.44,
         "snr_penalty": 0.38190001249313354,
         "label": null,
         "reason": null
@@ -535,49 +188,16 @@
   },
   {
     "track_id": "RefvocalsTest.wav",
-    "snr": 1.6145,
+    "snr": 1.6145000457763672,
     "phrases": [
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 84.88,
-        "dtw_score": 89.38,
-        "key_offset_cents": 0.65,
-        "key_penalty": 99.84,
-        "snr_penalty": 0.9226,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 82.38,
-        "dtw_score": 87.51,
-        "key_offset_cents": 21.45,
-        "key_penalty": 94.64,
-        "snr_penalty": 0.9226,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 79.35,
-        "dtw_score": 85.84,
-        "key_offset_cents": 53.92,
-        "key_penalty": 86.52,
-        "snr_penalty": 0.9226,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 82.35,
-        "dtw_score": 86.91,
-        "key_offset_cents": 14.81,
-        "key_penalty": 96.3,
-        "snr_penalty": 0.9226,
+        "phrase_score": 88.42,
+        "dtw_score": 95.56,
+        "key_offset_cents": 13.28,
+        "key_penalty": 96.68,
+        "snr_penalty": 0.9225999712944031,
         "label": null,
         "reason": null
       }
@@ -590,43 +210,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 19.76,
-        "dtw_score": 85.57,
-        "key_offset_cents": 28.21,
-        "key_penalty": 92.95,
-        "snr_penalty": 0.22609999775886536,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 17.88,
-        "dtw_score": 80.88,
-        "key_offset_cents": 105.06,
-        "key_penalty": 73.73,
-        "snr_penalty": 0.22609999775886536,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 15.92,
-        "dtw_score": 74.27,
-        "key_offset_cents": 164.55,
-        "key_penalty": 58.86,
-        "snr_penalty": 0.22609999775886536,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 20.19,
-        "dtw_score": 87.59,
-        "key_offset_cents": 22.14,
-        "key_penalty": 94.47,
+        "phrase_score": 19.3,
+        "dtw_score": 80.56,
+        "key_offset_cents": 0.68,
+        "key_penalty": 99.83,
         "snr_penalty": 0.22609999775886536,
         "label": null,
         "reason": null
@@ -640,43 +227,10 @@
       {
         "phrase_number": 1,
         "status": "scored",
-        "phrase_score": 62.35,
-        "dtw_score": 85.89,
-        "key_offset_cents": 227.41,
-        "key_penalty": 43.15,
-        "snr_penalty": 0.8291000127792358,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 2,
-        "status": "scored",
-        "phrase_score": 46.59,
-        "dtw_score": 74.92,
-        "key_offset_cents": 422.24,
-        "key_penalty": 0.0,
-        "snr_penalty": 0.8291000127792358,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 3,
-        "status": "scored",
-        "phrase_score": 64.79,
-        "dtw_score": 72.01,
-        "key_offset_cents": 13.84,
-        "key_penalty": 96.54,
-        "snr_penalty": 0.8291000127792358,
-        "label": null,
-        "reason": null
-      },
-      {
-        "phrase_number": 4,
-        "status": "scored",
-        "phrase_score": 60.52,
-        "dtw_score": 78.88,
-        "key_offset_cents": 178.69,
-        "key_penalty": 55.33,
+        "phrase_score": 57.29,
+        "dtw_score": 78.0,
+        "key_offset_cents": 230.42,
+        "key_penalty": 42.4,
         "snr_penalty": 0.8291000127792358,
         "label": null,
         "reason": null

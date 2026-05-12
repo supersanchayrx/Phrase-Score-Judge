@@ -12,25 +12,13 @@ import VocalsExtractor
 #parameters here
 candidateTrackFolder = "assets/tracks"
 audioFiles = librosa.util.find_files(candidateTrackFolder)
-candidateAudioArray = []
 sampleRate = 22050
 DebugSaveCleanAudio = False
 denoisingStrength = 0.75 #keep b/w 0->1
 denoisedCandidateAudios = []
 processedCandidateAudios = []
 
-processedCandidatePhraseData = []
-
-
-
-with open("assets/reference/struct.json","r") as audioInfoData:
-        data = json.load(audioInfoData)
-
-        timeWindows = [(phraseData["start_time_ms"], phraseData["end_time_ms"]) for phraseData in data["phrases"]]
-
-        phraseStartRef = timeWindows[0][0]
-
-def ProcessAudioFiles(ReadFiles = True):
+def ProcessAudioFiles(ReadFiles=True):
     processedCandidateAudios.clear()
 
     # if ReadFiles:
@@ -70,44 +58,29 @@ def ProcessAudioFiles(ReadFiles = True):
 
     for audioFile in audioFiles:
         audioFileName = os.path.basename(audioFile)
-        vocalsOnlyCandidate, snr = VocalsExtractor.extractVocals(audioFile,sampleRate)
+        vocalsOnlyCandidate, snr = VocalsExtractor.extractVocals(audioFile, sampleRate)
         processedCandidateAudio = ProcessAudioArray.SwiftProcessMethod(vocalsOnlyCandidate)
-        voiceStartTime = processedCandidateAudio["voiceStartTime"]
 
-        frameTimes = processedCandidateAudio["frameTimes"]
+        cents = processedCandidateAudio["cents"]
+        voiced = processedCandidateAudio["voiced"]
+        confidence = processedCandidateAudio["confidence"]
+        medianCents = float(np.nanmedian(cents))
+        normalizedCents = cents - medianCents
 
-        processedCandidatesPhrases = []
-        for phraseIndex,times in enumerate(timeWindows):
-            timeStart, timeEnd = times
-
-            if voiceStartTime is None:
-                continue
-
-            phraseStartTime = voiceStartTime  + (timeStart-phraseStartRef)/1000.0
-            phraseEndTime = voiceStartTime  + (timeEnd-phraseStartRef)/1000.0
-
-            frameIndices = np.where((frameTimes>=phraseStartTime) & (frameTimes<=phraseEndTime)) [0]
-
-            phraseCents = processedCandidateAudio["cents"][frameIndices]
-            phraseVad = processedCandidateAudio["voiced"][frameIndices]
-            phraseConfidence = processedCandidateAudio["confidence"][frameIndices]
-            medianCents = float(np.nanmedian(phraseCents))
-
-            normalizedCents = phraseCents-np.nanmedian(phraseCents)
-
-            processedCandidatesPhrases.append({
-            "FileName" : audioFileName,
-            "phraseNumber": phraseIndex + 1,
-            "cents" : normalizedCents,
+        candidateData = [{
+            "FileName": audioFileName,
+            "phraseNumber": 1,
+            "cents": normalizedCents,
             "snr": snr,
-            "medianCents":medianCents,
-            "voiced":phraseVad,
-            "confidence":phraseConfidence
-            })
+            "medianCents": medianCents,
+            "voiced": voiced,
+            "confidence": confidence
+        }]
 
-        processedCandidateAudios.append(processedCandidatesPhrases)
+        processedCandidateAudios.append(candidateData)
+        voiceStartTime = processedCandidateAudio["voiceStartTime"]
         print(f"Candidate Audio {audioFile} Processed and start time observed at {voiceStartTime}")
-             
+
     return processedCandidateAudios
 
 #trial = ProcessAudioFiles()

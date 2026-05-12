@@ -5,6 +5,7 @@ import numpy as np
 import os
 from swift_f0 import *
 import ProcessAudioArray
+import VocalsExtractor
 
 #Skipping the de noising pipeline for ref audio as it's already super clean
 
@@ -17,51 +18,29 @@ detector = SwiftF0(fmin=46.875, fmax=2093.75, confidence_threshold=0.7)
 RefAudioProcessedData = None
 
 referenceAudioPhraseData = []
-refAudioPath = "assets/reference/vocals.mp3"
+refAudioPath = "assets/reference/vocals.wav"
+
 def PreProcessRef():
-    refAudio,sr = librosa.load(refAudioPath, sr=sampleRate, mono=True)
-    refResults = detector.detect_from_file(refAudioPath)
-    plot_pitch(refResults, show=False, output_path=f"pitch.jpg")
+    refVocals, snr = VocalsExtractor.extractVocals(refAudioPath, sampleRate)
 
-    #find windows for feature extraction
-    with open("assets/reference/struct.json","r") as audioInfoData:
-        data = json.load(audioInfoData)
-    #print(data)
+    RefAudioProcessedData = ProcessAudioArray.SwiftProcessMethod(refVocals)
 
-    timeWindows = [(phraseData["start_time_ms"], phraseData["end_time_ms"]) for phraseData in data["phrases"]]
+    cents = RefAudioProcessedData["cents"]
+    voiced = RefAudioProcessedData["voiced"]
+    confidence = RefAudioProcessedData["confidence"]
+    medianCents = float(np.nanmedian(cents))
+    normalizedCents = cents - medianCents
 
-    dirtyData = refAudio[int((timeWindows[0][0])*sampleRate/1000):int((timeWindows[3][1])*sampleRate/1000)]
-    RefAudioProcessedData = ProcessAudioArray.SwiftProcessMethod(dirtyData)
+    referenceAudioPhraseData.append({
+        "FileName": os.path.basename(refAudioPath),
+        "phraseNumber": 1,
+        "cents": normalizedCents,
+        "medianCents": medianCents,
+        "voiced": voiced,
+        "confidence": confidence
+    })
 
     voiceStartTime = RefAudioProcessedData["voiceStartTime"]
-
-    refSliceOrigin = timeWindows[0][0]
-    frameTimes = RefAudioProcessedData["frameTimes"]
-
-    for phraseIdx, times in enumerate(timeWindows):
-        timeStart, timeEnd = times
-
-        phraseStartTime = (timeStart-refSliceOrigin)/1000.0
-        phraseEndTime = (timeEnd-refSliceOrigin)/1000.0
-
-        frameIndices = np.where((frameTimes>=phraseStartTime) & (frameTimes<=phraseEndTime)) [0]
-
-        phraseCents = RefAudioProcessedData["cents"][frameIndices]
-        phraseVad = RefAudioProcessedData["voiced"][frameIndices]
-        phraseConfidence = RefAudioProcessedData["confidence"][frameIndices]
-
-        medianCents = np.nanmedian(phraseCents)
-        normalizedCents = phraseCents-np.nanmedian(phraseCents)
-
-        referenceAudioPhraseData.append({
-            "FileName": os.path.basename(refAudioPath),
-            "phraseNumber": phraseIdx + 1,
-            "cents" : normalizedCents,
-            "medianCents":medianCents,
-            "voiced":phraseVad,
-            "confidence":phraseConfidence
-        })
-
     print(f"Reference Audio Processed and start time observed at {voiceStartTime}")
 
     return referenceAudioPhraseData

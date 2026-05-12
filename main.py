@@ -26,14 +26,13 @@ for candidateIndex in range(len(CandidatesFeatureData)):
     if len(candidatePhrases) == 0:
         trackId = f"candidate_{candidateIndex+1}"
         trackEntry = {"track_id": trackId, "snr": None, "phrases": []}
-        for phraseNum in range(1, 5):
-            trackEntry["phrases"].append({
-                "phrase_number": phraseNum,
-                "status": "skipped",
-                "phrase_score": None,
-                "label": "silent_track",
-                "reason": "no voice activity detected in track"
-            })
+        trackEntry["phrases"].append({
+            "phrase_number": 1,
+            "status": "skipped",
+            "phrase_score": None,
+            "label": "silent_track",
+            "reason": "no voice activity detected in track"
+        })
         phraseResults.append(trackEntry)
         trackScores.append({"track_id": trackId, "aggregate_score": None})
         print(f"Candidate {candidateIndex+1} skipped (no voiced phrases)")

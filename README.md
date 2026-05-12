@@ -1,5 +1,14 @@
 # Instructions — Running the Pitch Scoring Pipeline
 
+Try it on -> 
+
+You can see the files being processed :
+![alt text](image.png)
+
+
+The results would be displayed in a table like this : 
+![alt text](image-1.png)
+
 ## Dependencies
 
 Install the following Python packages before running the pipeline:
